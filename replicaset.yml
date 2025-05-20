@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: project03-replicaset
+  labels:
+    app: project03
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: project03
+  template:
+    metadata:
+      labels:
+        app: project03
+    spec:
+      containers:
+        - name: project03
+          image: vijay9440/project034:0.1.0
+          ports:
+            - containerPort: 80
