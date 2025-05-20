@@ -3,16 +3,16 @@ kind: ReplicaSet
 metadata:
   name: project03-replicaset
   labels:
-    app: project04
+    app: project03-rs
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: project04
+      app: project03-rs
   template:
     metadata:
       labels:
-        app: project04
+        app: project03-rs
     spec:
       containers:
         - name: project03-replicaset
