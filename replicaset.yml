@@ -15,7 +15,7 @@ spec:
         app: project03
     spec:
       containers:
-        - name: project03
+        - name: project03-replicaset
           image: vijay9440/project034:0.1.0
           ports:
             - containerPort: 80
