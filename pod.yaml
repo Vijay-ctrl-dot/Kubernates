@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: project03-pod
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: project03
+      image: vijay9440/project034:0.1.0
+      ports:
+        - containerPort: 80
